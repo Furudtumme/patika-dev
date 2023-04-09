@@ -1,0 +1,11 @@
+First, we split the array in half.
+[16,21,11] [8,12,22]
+Then we slipt array again. The results like that:
+[16,21] [11] [8,12] [22]
+We arrange the parts among themselves.
+[16,21] [11] [8,12] [22] (Actually, it's not really necessary.)
+
+Finally, we concatenate all the arrays and sort them.
+[8,11,12,16,21,22]
+
+Voilà!
