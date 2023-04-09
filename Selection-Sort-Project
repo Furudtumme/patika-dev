@@ -1,0 +1,18 @@
+First of all, the first term of the array is 22. We compare it with the second term 27.    22<27
+ Then we compare 16 with 22.   16<22     
+ [16,22,27,2,18,6]
+ We compare the next number 2 with 16. 2<16 
+ [2,16,22,27,18,6]
+ This loop continues in this way according to the next number. Now the next number: 18. 
+ We compare 2 with 18. (Because 2 is currently our minimum number.)
+ 2<18 (This means that we will also compare with other numbers one by one.)
+ Now we compare 18 with 16. The result is 16<18 (Let's continue.)
+ Compare with 22 and 18. The result is 18<22 (We found the right place of 18.)
+ [2,16,18,22,27,6]
+ Now we gonna do same thing for 6.
+ We compare 2 with 6 and the result is: 2<6
+ But to pinpoint its exact location, we have to limit one of the other numbers to it. So we compare 6 with 16 and the result is: 6<16
+ Finally [2,6,16,18,22,27]
+
+ ------------------------------
+ Since the number 18 we chose is right in the middle, it is included in the average case.
