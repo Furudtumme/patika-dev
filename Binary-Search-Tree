@@ -1,0 +1,11 @@
+First of all, I chose burds root 5. Being in the middle made it easier for me.
+Then i placed the larger than 5 on the right and the smaller ones on the left.
+
+
+                                  5
+                                /   \
+                              3       6
+                             / \       \
+                            1   4       8
+                           / \         / \
+                          0   2       7   9
