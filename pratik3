@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class pratik3 {
+    public static void main(String[] args) {
+     int kenar1, kenar2, kenar3, cevre=0;
+     double alan;
+     Scanner input= new Scanner(System.in);
+     System.out.println("Kenar uzunluklarını giriniz.");
+     kenar1= input.nextInt();
+     kenar2=input.nextInt();
+     kenar3=input.nextInt();
+     cevre=(kenar1+kenar2+kenar3)/2;
+     alan=Math.sqrt(cevre*(cevre-kenar1)*(cevre-kenar2)*(cevre-kenar3));
+     System.out.println("Alan: " +alan);
+
+        }
+    }
