@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class pratik7 {
+    public static void Main(String[]args){
+        float elma, armut, domates, muz, patlican, toplam=0.0F;
+        Scanner naber= new Scanner(System.in);
+        System.out.println("Kaç kilo elma aldınız?");
+        elma=naber.nextFloat();
+        System.out.println("Kaç kilo armut aldınız?");
+        armut=naber.nextFloat();
+        System.out.println("Kaç kilo domates aldınız?");
+        domates=naber.nextFloat();
+        System.out.println("Kaç kilo muz aldınız?");
+        muz=naber.nextFloat();
+        System.out.println("Kaç kilo patlıcan aldınız?");
+        patlican=naber.nextFloat();
+        toplam= (float) ((elma*3.67)+ (armut*2.14) + (domates*1.11)+(muz*0.95)+(patlican*5.00));
+        System.out.println("Toplam ödeyeceğiniz tutar: " +toplam);
+    }
+}
