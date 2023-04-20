@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class pratik5 {
+    public static void Main(String[]args){
+        int derece;
+        float yaricap, pi= 3.14F, cevre= 0.0F;
+        double alan=0.0;
+        Scanner girdi=new Scanner(System.in);
+        System.out.println("Yarıçap değerini giriniz.");
+        yaricap=girdi.nextFloat();
+        System.out.println("Derece değerini giriniz.");
+        derece=girdi.nextInt();
+        cevre= 2*pi*yaricap;
+        int deger = derece / 360;
+        alan=(pi*yaricap*yaricap)* deger;
+        System.out.println("Çevre: "+cevre);
+        System.out.println("Alan: " +alan);
+
+    }
+}
