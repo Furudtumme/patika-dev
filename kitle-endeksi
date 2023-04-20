@@ -13,7 +13,7 @@ public class pratik6 {
         else if(18.5<indeks && indeks<24.9)
             System.out.println("Vücut kitle endeksiniz: " +indeks +" İdeal kilodasınız.");
         else if(30<indeks && indeks<39.9)
-            System.out.println("Vücut kitle endeksiniz: " + indeks + " İdeal kilonun üstündsiniz.(obez)");
+            System.out.println("Vücut kitle endeksiniz: " + indeks + " İdeal kilonun üstündsiniz.(Obez)");
         else if(40<indeks)
             System.out.println("Vücut kitle endeksiniz: "+ indeks + " İdeal kilonun üstündesiniz.(Morbid obez");
 
