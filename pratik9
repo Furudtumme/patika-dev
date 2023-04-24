@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class pratik9 {
+    public static void Main(String[]args){
+        String sifre = "slm657", kullanici;
+        int select;
+        Scanner girdi = new Scanner(System.in);
+        System.out.println("Kullanıcı adınızı giriniz.");
+        kullanici = girdi.nextLine();
+        System.out.println("Şifrenizi giriniz.");
+        sifre = girdi.next();
+        switch (sifre) {
+            case "slm657":
+                System.out.println("Başarıyla giriş yaptınız");
+                break;
+            default:
+                System.out.println("Hatalı giriş yaptınız. Şifrenizi unuttuysanız sıfırlamak ister misiniz? Evetse 1 hayırsa 2");
+                select = girdi.nextInt();
+                switch (select) {
+                    case 1:
+                        System.out.println("Yeni şifrenizi giriniz.");
+                        sifre = girdi.next();
+                        System.out.println("Başarıyla sıfırladınız. İyi günler.");
+                }
+                break;
+        }
+    }
+}
