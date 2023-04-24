@@ -1,0 +1,40 @@
+import java.util.Scanner;
+class Patika8 {
+    public static void Main(String[] args) {
+        int select;
+        double sayi1, sayi2, carpim=1.0;
+        Scanner SecimeAzKaldi = new Scanner(System.in);
+        System.out.println("1.sayıyı giriniz.");
+        sayi1 = SecimeAzKaldi.nextDouble();
+        System.out.println("2. sayıyı giriniz.");
+        sayi2 = SecimeAzKaldi.nextDouble();
+        System.out.println("Yapmak istediğiniz işlemi seçiniz. \n 1)Toplama \n 2)Çıkarma \n 3)Çarpma \n 4)Bölme \n 5)Üs Alma");
+        select = SecimeAzKaldi.nextInt();
+        switch (select) {
+            case 1:
+                System.out.println("Sonuç:" + (sayi1 + sayi2));
+                break;
+            case 2:
+                System.out.println("Sonuç:" + (sayi1 - sayi2));
+                break;
+            case 3:
+                System.out.println("Sonuç:" + (sayi1 * sayi2));
+                break;
+            case 4:
+                if (sayi2 != 0)
+                    System.out.println("Tanımsız.");
+                else
+                    System.out.println("Sonuç:" + (sayi1 / sayi2));
+                break;
+            case 5:
+                for (int i = 0; i < sayi2; i++) {
+                    carpim= carpim*sayi1;
+                }
+                System.out.println("Sonuç:" + carpim);
+                break;
+            default:
+                System.out.println("Hatalı giriş yaptınız.");
+                break;
+        }
+    }
+}
