@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class pratik13 {
+    public static void Main(String[] args) {
+        Scanner girdi = new Scanner(System.in);
+        int ay, gun;
+        System.out.println("Doğduğunuz ayı sayısal olarak giriniz.");
+        ay = girdi.nextInt();
+        System.out.println("Doğum gününüzü giriniz.");
+        gun = girdi.nextInt();
+        if ((ay == 1 && gun > 22 && gun < 32) ||(ay == 2 && gun < 20 && gun > 0)) {
+            System.out.println("Kova burcusunuz.");
+        }   else if ((ay == 2 && gun > 21 && gun < 30) ||(ay == 3 && gun < 21 && gun > 0)) {
+            System.out.println("Balık burcusunuz.");
+        }   else if ((ay == 12 && gun > 21 && gun < 32) ||(ay == 1 && gun < 22 && gun > 0)) {
+            System.out.println("Oğlak burcusunuz.");
+        }   else if ((ay == 11 && gun > 21 && gun < 31) ||(ay == 12 && gun < 22 && gun > 0)) {
+            System.out.println("Yay burcusunuz.");
+        }   else if ((ay == 10 && gun > 22 && gun < 32) ||(ay == 11 && gun < 23 && gun > 0)) {
+            System.out.println("Akrep burcusunuz.");
+        }    else if ((ay == 9 && gun > 22 && gun < 31) ||(ay == 10 && gun < 23 && gun > 0)) {
+            System.out.println("Terazi burcusunuz.");
+        }    else if ((ay == 8 && gun > 22 && gun < 32) ||(ay == 9 && gun < 23 && gun > 0)) {
+            System.out.println("Başak burcusunuz.");
+        }    else if ((ay == 7 && gun > 22 && gun < 32) ||(ay == 8 && gun < 23 && gun > 0)) {
+            System.out.println("Aslan burcusunuz.");
+        }    else if ((ay == 6 && gun > 22 && gun < 31) ||(ay == 7 && gun < 23 && gun > 0)) {
+            System.out.println("Yengeç burcusunuz.");
+        }    else if ((ay == 5 && gun > 23 && gun < 32) ||(ay == 6 && gun < 23 && gun > 0)) {
+            System.out.println("İkizler burcusunuz.");
+        }    else if ((ay == 4 && gun > 22 && gun < 31) ||(ay == 5 && gun < 22 && gun > 0)) {
+            System.out.println("Boğa burcusunuz.");
+        }    else if ((ay ==3 && gun > 20 && gun < 32) ||(ay ==4 && gun <21  && gun > 0)) {
+            System.out.println("Koç burcusunuz.");
+        } else
+            System.out.println("Hatalı giriş yaptınız.");
+    }
+}
