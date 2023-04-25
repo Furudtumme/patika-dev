@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class pratik11 {
+    public static void Main(String[]args){
+        double heat;
+        Scanner girdi= new Scanner(System.in);
+        System.out.println("Hava bugün kaç derece? Ör:39.8");
+        heat=girdi.nextDouble();
+        if(heat<5)
+            System.out.println("Kayak yapmak için harika bir gün.");
+        else if (5<heat && heat<15)
+            System.out.println("Sinemaya gitmeye ne dersin?");
+        else if (15<heat && heat<25)
+            System.out.println("Piknik yapmak için amma da güzel bir gün he.");
+        else if(25<heat)
+            System.out.println("Yüzmek için harika bir gün.");
+    }
+}
