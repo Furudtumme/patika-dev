@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class pratik12 {
+    public static void Main(String[]args){
+        Scanner girdi= new Scanner(System.in);
+        int sayi1,sayi2,sayi3;
+        System.out.println("Birinci sayıyı giriniz.");
+        sayi1=girdi.nextInt();
+        System.out.println("İkinci sayıyı giriniz.");
+        sayi2=girdi.nextInt();
+        System.out.println("Üçüncü sayıyı giriniz.");
+        sayi3=girdi.nextInt();
+        if(sayi1<sayi3 && sayi2<sayi3){
+            if(sayi1<sayi2)
+                System.out.println("1<2<3");
+            else
+                System.out.println("2<1<3");
+        }
+        else if(sayi1<sayi2 && sayi3<sayi2){
+            if(sayi1<sayi3)
+                System.out.println("1<3<2");
+            else
+                System.out.println("3<1<2");
+        }
+        else if(sayi2<sayi1 && sayi3<sayi1){
+            if(sayi2<sayi3)
+                System.out.println("2<3<1");
+            else
+                System.out.println("3<2<1");
+        }
+    }
+
+}
