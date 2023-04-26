@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class pratik14 {
+    public static void Main(String[] args) {
+        Scanner girdi = new Scanner(System.in);
+        int select, yas;
+        double km, toplam = 0.0, indirim;
+        System.out.println("Merhaba. Uçuş türünüzü seçiniz. \n 1) Tek Yön \n 2)Gidiş-Dönüş  ");
+        select = girdi.nextInt();
+        System.out.println("Yaşınızı giriniz.");
+        yas = girdi.nextInt();
+        System.out.println("Kilometre giriniz.");
+        km = girdi.nextDouble();
+        toplam = km * 0.10;
+        if (select == 2) {
+            indirim = toplam * 0.2;
+            toplam -= indirim;
+        }
+        if (yas < 12) {
+            indirim = toplam * 0.5;
+            toplam -= indirim;
+            System.out.println("Uçuş karşılığı ödeyeceğiniz ücret:" + toplam);
+        } else if (12 < yas && yas < 24) {
+            indirim = toplam * (0.1);
+            toplam -= indirim;
+            System.out.println("Uçuş karşılığı ödeyeceğiniz ücret:" + toplam);
+        } else if (yas > 65) {
+            indirim = toplam * (0.3);
+            toplam -= indirim;
+            System.out.println("Uçuş karşılığı ödeyeceğiniz ücret:" + toplam);
+        } else
+            System.out.println("Uçuş karşılığı ödeyeceğiniz ücret:" + toplam);
+    }
+}
