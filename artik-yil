@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class pratik16 {
+public static void Main(String[]args){
+    int kalan=0, yil;
+    Scanner girdi= new Scanner(System.in);
+    System.out.println("Yıl giriniz.");
+    yil=girdi.nextInt();
+    kalan=yil%4;
+    if(kalan==0)
+        System.out.println(yil +" bir artık yıldır.");
+    else
+        System.out.println(yil +" bir artık yıl değildir.");
+
+}
+}
