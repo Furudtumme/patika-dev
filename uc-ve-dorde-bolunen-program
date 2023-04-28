@@ -1,0 +1,24 @@
+package Ilay;
+import java.util.Scanner;
+public class pratik17 {
+
+	public static void main(String[] args) {
+	/*Girilen sayıya kadar 0'dan girilen sayıya kadar olan sayılardan 3 ve 4'e tam bölünen sayıların
+	ortalamasını hesaplayan program.*/
+		int k; 
+		double sayac=0.0,toplam=0.0;
+		Scanner girdi= new Scanner(System.in);
+		System.out.println("Sayı giriniz.");
+		k=girdi.nextInt();
+		for(int i=0; i<=k; i++) {
+			if(i%3==0 || i%4==0) {
+				System.out.println(i);
+				toplam=toplam+i;
+				sayac++;
+			}
+		}
+		System.out.println(toplam/sayac);
+		
+	}
+
+}
