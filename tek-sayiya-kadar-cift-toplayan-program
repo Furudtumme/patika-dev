@@ -1,0 +1,22 @@
+package Ilay;
+import java.util.Scanner;
+public class pratik18 {
+
+	public static void main(String[] args) {
+		/*Java döngüler ile tek bir sayı girilene kadar kullanıcıdan girişleri kabul eden ve girilen değerlerden çift ve 4'ün katları olan
+		  sayıları toplayıp ekrana basan programı yazıyoruz.*/
+		int sayi,toplam=0;
+		Scanner girdi=new Scanner(System.in);
+		
+		
+		do {
+			System.out.println("Bir sayı giriniz.");
+			sayi=girdi.nextInt();
+			if(sayi%4==0) {//Çift ve 4'ün katı diyor. 4 zaten çifttir. Katları da öyle.
+			toplam=sayi+toplam;
+			
+		}
+		 System.out.println("Toplam:" +toplam);
+		} while(sayi%2==0);
+}
+}
