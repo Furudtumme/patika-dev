@@ -1,0 +1,19 @@
+package Ilay;
+import java.util.Scanner;
+public class pratik19 {
+
+	public static void main(String[] args) {
+	Scanner slm=new Scanner(System.in);
+	/*Java döngüler ile girilen sayıya kadar olan 4 ve 5'in 
+	kuvvetlerini ekrana yazdıran programı yazıyoruz.*/
+	int girdi;
+	System.out.println("Sayı giriniz.");
+	girdi=slm.nextInt();
+		for(int i=1;i<=girdi; i*=4) {
+		System.out.println(i);
+		}
+		for(int i=1;i<=girdi; i*=5) {
+		System.out.println(i);
+		}
+	}
+}
