@@ -1,0 +1,25 @@
+package Ilay;
+import java.util.Scanner;
+public class pratik21 {
+
+	public static void main(String[] args) {
+	Scanner girdi=new Scanner(System.in);
+	int n,r,sncr=1,sncf=1,cikarma=0, toplam=1;
+	System.out.println("Sayı giriniz. (n değeri)");
+	n=girdi.nextInt();
+	System.out.println("Sayı giriniz.(r değeri)");
+	r=girdi.nextInt();
+	cikarma=n-r;
+	for(int i=1; i<=n; n--) {
+		sncf=sncf*n;
+	}
+	for(int j=1; j<=r; r--) {
+		sncr=sncr*r;
+	}
+	for(int i=1; i<=cikarma; cikarma--) {
+		toplam=cikarma*toplam;
+	}
+	System.out.println(sncf/(sncr*toplam));
+	}
+
+}
