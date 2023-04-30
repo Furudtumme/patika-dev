@@ -1,0 +1,16 @@
+package Ilay;
+import java.util.Scanner;
+public class pratik23 {
+
+	public static void main(String[] args) {
+		// Harmonik sayıları yazdırıyoruz.
+		Scanner girdi=new Scanner(System.in);
+		double sayi, a=0;
+		System.out.println("Sayı giriniz");
+		sayi=girdi.nextInt();
+		for(double i=1; i<sayi; i++) {
+			a=1/i;
+			System.out.print(a + "+ ");
+		}
+	}
+}
