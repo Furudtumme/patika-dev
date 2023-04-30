@@ -1,0 +1,18 @@
+package Ilay;
+import java.util.Scanner;
+public class pratik22 {
+
+	public static void main(String[] args) {
+		// Girilen sayının basamaklarını toplayan program.
+		Scanner girdi=new Scanner(System.in);
+		int sayi, kalan=0,toplam=0;
+		System.out.println("Sayı giriniz.");
+		sayi=girdi.nextInt();
+		while(sayi!=0) {
+		kalan=sayi%10;
+		sayi=sayi/10;
+		toplam+=kalan;
+		}
+		System.out.println(toplam);
+	}
+}
