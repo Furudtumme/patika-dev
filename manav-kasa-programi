@@ -1,19 +1,19 @@
 import java.util.Scanner;
 public class pratik7 {
     public static void Main(String[]args){
-        float elma, armut, domates, muz, patlican, toplam=0.0F;
+        float apple, pear, tomato, banana, aubergine, result=0.0F; //Define the variables.
         Scanner naber= new Scanner(System.in);
-        System.out.println("Kaç kilo elma aldınız?");
-        elma=naber.nextFloat();
-        System.out.println("Kaç kilo armut aldınız?");
-        armut=naber.nextFloat();
-        System.out.println("Kaç kilo domates aldınız?");
-        domates=naber.nextFloat();
-        System.out.println("Kaç kilo muz aldınız?");
-        muz=naber.nextFloat();
-        System.out.println("Kaç kilo patlıcan aldınız?");
-        patlican=naber.nextFloat();
-        toplam= (float) ((elma*3.67)+ (armut*2.14) + (domates*1.11)+(muz*0.95)+(patlican*5.00));
-        System.out.println("Toplam ödeyeceğiniz tutar: " +toplam);
+        System.out.println("How many kilos of apples did you buy?");
+        apple=naber.nextFloat();
+        System.out.println("How many kilos of pears did you buy?");
+        pear=naber.nextFloat();
+        System.out.println("How many kilos of tomatoes did you buy?");
+        tomato=naber.nextFloat();
+        System.out.println("How many kilos of bananas did you buy?");
+        banana=naber.nextFloat();
+        System.out.println("How many kilos of aubergines did you buy?");
+        aubergine=naber.nextFloat();
+        result= (float) ((apple*3.67)+ (pear*2.14) + (tomato*1.11)+(banana*0.95)+(aubergine*5.00));
+        System.out.println("Total amount you will pay: " +result);
     }
 }
