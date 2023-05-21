@@ -1,47 +1,47 @@
 import java.util.Scanner;
 public class pratik15 {
     public static void Main(String[]args){
-        Scanner girdi=new Scanner(System.in);
-        int yil, kalan;
-        System.out.println("Doğum yılınızı giriniz.");
-        yil=girdi.nextInt();
-        kalan= yil%12;
-        switch(kalan){
+       Scanner input=new Scanner(System.in);
+        int year, remainder;
+        System.out.println("Enter your year of birth.");
+        year=input.nextInt();
+        remainder= year%12; //
+        switch(remainder){
             case 0:
-                System.out.println("Maymun");
+                System.out.println("Monkey");
                 break;
             case 1:
-                System.out.println("Horoz");
+                System.out.println("Cockerel");
                 break;
             case 2:
-                System.out.println("Köpek");
+                System.out.println("Dog");
                 break;
             case 3:
-                System.out.println("Domuz");
+                System.out.println("Pig");
                 break;
             case 4:
-                System.out.println("Fare");
+                System.out.println("Mouse");
                 break;
             case 5:
-                System.out.println("Öküz");
+                System.out.println("Bullock");
                 break;
             case 6:
-                System.out.println("Kaplan");
+                System.out.println("Tiger");
                 break;
             case 7:
-                System.out.println("Tavşan");
+                System.out.println("Rabbit");
                 break;
             case 8:
-                System.out.println("Ejdeha");
+                System.out.println("Dragon");
                 break;
             case 9:
-                System.out.println("Yılan");
+                System.out.println("Snake");
                 break;
             case 10:
-                System.out.println("At");
+                System.out.println("Horse");
                 break;
             case 11:
-                System.out.println("Koyun");
+                System.out.println("Sheep");
         }
     }
 }
