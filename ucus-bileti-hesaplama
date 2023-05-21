@@ -1,33 +1,33 @@
 import java.util.Scanner;
 public class pratik14 {
     public static void Main(String[] args) {
-        Scanner girdi = new Scanner(System.in);
-        int select, yas;
-        double km, toplam = 0.0, indirim;
-        System.out.println("Merhaba. Uçuş türünüzü seçiniz. \n 1) Tek Yön \n 2)Gidiş-Dönüş  ");
-        select = girdi.nextInt();
-        System.out.println("Yaşınızı giriniz.");
-        yas = girdi.nextInt();
-        System.out.println("Kilometre giriniz.");
-        km = girdi.nextDouble();
-        toplam = km * 0.10;
+        Scanner input = new Scanner(System.in);
+        int select, age;
+        double km, result = 0.0, discount;
+        System.out.println("Hello. Choose your flight type. \n 1) One Way \n 2) Round Trip ");
+        select = input.nextInt();
+        System.out.println("Please enter your age.");
+        age = input.nextInt();
+        System.out.println("Please enter kilometers.");
+        km = input.nextDouble();
+        result = km * 0.10;
         if (select == 2) {
-            indirim = toplam * 0.2;
-            toplam -= indirim;
+            discount = result * 0.2;
+            result -= discount;
         }
-        if (yas < 12) {
-            indirim = toplam * 0.5;
-            toplam -= indirim;
-            System.out.println("Uçuş karşılığı ödeyeceğiniz ücret:" + toplam);
-        } else if (12 < yas && yas < 24) {
-            indirim = toplam * (0.1);
-            toplam -= indirim;
-            System.out.println("Uçuş karşılığı ödeyeceğiniz ücret:" + toplam);
-        } else if (yas > 65) {
-            indirim = toplam * (0.3);
-            toplam -= indirim;
-            System.out.println("Uçuş karşılığı ödeyeceğiniz ücret:" + toplam);
+        if (age < 12) {
+            discount = result * 0.5;
+            result -= discount;
+            System.out.println("The fee you will pay for the flight::" + result);
+        } else if (12 < age && age < 24) {
+            discount = result * (0.1);
+            result -= discount;
+            System.out.println("The fee you will pay for the flight::" + result);
+        } else if (age > 65) {
+            discount = result * (0.3);
+            result -= discount;
+            System.out.println("The fee you will pay for the flight::" + result);
         } else
-            System.out.println("Uçuş karşılığı ödeyeceğiniz ücret:" + toplam);
+            System.out.println("The fee you will pay for the flight::" + result);
     }
 }
