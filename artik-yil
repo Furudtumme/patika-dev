@@ -1,15 +1,15 @@
 import java.util.Scanner;
 public class pratik16 {
 public static void Main(String[]args){
-    int kalan=0, yil;
-    Scanner girdi= new Scanner(System.in);
-    System.out.println("Yıl giriniz.");
-    yil=girdi.nextInt();
-    kalan=yil%4;
-    if(kalan==0)
-        System.out.println(yil +" bir artık yıldır.");
-    else
-        System.out.println(yil +" bir artık yıl değildir.");
+    int remainder=0, year;
+        Scanner input= new Scanner(System.in);
+        System.out.println("Please enter the year.");
+        year=input.nextInt();
+        remainder=year%4; //Leap year is the year in which the remainder of the entered year divided by 4 is 0.
+        if(remainder==0)
+            System.out.println(year +"  is a leap year.");
+        else
+            System.out.println(year +"  is not a leap year.");
 
 }
 }
