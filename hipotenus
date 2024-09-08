@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class pr_1 {
+        public static void main(String[] args) {
+          //Program to find hypotenuse in right triangle.
+          Scanner input= new Scanner(System.in);
+          double short1, long1, hypo=0.0; 
+          System.out.println("Give me a value for short side of triangle.");
+          short1= input.nextDouble();
+          System.out.println("Give me a value for long side of triangle.");
+          long1=input.nextDouble();
+          hypo=((short1*short1)+ (long1*long1));
+          hypo= Math.sqrt(hypo);
+          System.out.println("The result is: " + hypo);
+        }
+    }
