@@ -1,0 +1,60 @@
+import java.util.Scanner;
+public class b4kms {
+    public static void main(String[]args){
+        Scanner input= new Scanner(System.in);
+        int account=0, amount, select;
+        String password, userpass=" ";
+        System.out.println("Please create a password.");
+        password=input.nextLine();
+        System.out.println("Created successfully.");
+        userpass=password;
+        //Burda kullanıcı bir parola oluşturdu ve ben bunu sisteme yerleştirdim. 
+        //Burdan sonra kullanıcıdan parola isteyecek, kullanıcı sadece 3 kere yanlış girebilir.
+        System.out.println("Welcome. Enter your password please.");
+        password= input.nextLine();
+        if(!userpass.equals(password)){
+           System.out.println("The password is incorrect."); 
+            System.exit(0);
+        }else if (password.equals(userpass)){
+            System.out.println("You have logged in successfully.");
+            do{
+                System.out.println("Select the action you want to do.\n 1)Deposit Money \n 2)Withdraw Money \n 3)Show the amount of money in the account \n 4)Exit ");
+            select=input.nextInt();
+            switch(select){
+                case 1:
+                    System.out.print("Your bank account has: "+ account+"\nEnter the amount of money you want to deposit.");
+                    amount=input.nextInt();
+                    account+=amount;
+                    System.out.println("Your bank account has: "+ account);
+                    System.out.println("Select the action you want to do.\n 1)Deposit Money \n 2)Withdraw Money \n 3)Show the amount of money in the account \n 4)Exit ");
+                    select=input.nextInt();
+                case 2:
+                    System.out.println("Your bank account has: "+ account+"\nEnter the amount of money you want to withdraw.");
+                    amount=input.nextInt();
+                    if(account==0){
+                        System.out.println("There is not enough money in your account.");
+                        break;
+                    }else if(amount>account){
+                        System.out.println("There is not enough money in your account.");
+                        break;
+                    } else if(account> amount){
+                        account=account-amount;
+                        System.out.println("Your bank account has: "+ account);
+                        break;
+                    }
+
+                case 3:
+                    System.out.println("Your bank account has: "+ account);
+
+                case 4:
+                    System.exit(0);
+
+                default:
+                System.out.println("Processing Error. Try it again.");
+            }
+                
+        }
+        while(select!=4);
+    }
+    }
+}
