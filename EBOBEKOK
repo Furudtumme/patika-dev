@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class richie {
+public static int ebob(int a, int b){
+    while(b!=0){
+        int temp=b;
+        b=a%b;
+        a=temp;
+    }
+    return a;
+} 
+
+public static int ekok(int a,int b){
+    return (a*b)/ebob(a,b);
+}
+
+public static void main(String[]args){
+Scanner input= new Scanner(System.in);
+int a, b;
+System.out.println("Please enter values for 2 numbers.");
+a=input.nextInt();
+b=input.nextInt();
+int ekok=ekok(a, b);
+int ebob=ebob(a, b);
+System.out.println("EBOB: " + ebob + "\nEKOK: "+ ekok);
+}
+}
