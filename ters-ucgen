@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class trial{
+    public static void main(String[]args){
+        Scanner input= new Scanner(System.in);
+        int number, basamak;
+        number=input.nextInt();
+        basamak=number;
+        for (int i=0; i<=basamak; i++){
+            for (int j=1; j<=(2*number-1); j++){
+                System.out.print("*");
+            }
+            number--;
+            System.out.println();
+        }
+        }  
+    }
