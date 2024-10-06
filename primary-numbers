@@ -1,0 +1,20 @@
+//1'den 100'e kadar asal sayıları yazdıran java kodu. @interface
+public class sl{
+    public static void main(String[] args) {
+        int number = 100;
+        for (int i = 2; i < number; i++) { 
+            if (asalMi(i)) { 
+                System.out.println(i + " this number is prime."); 
+            }
+        }
+    }
+       public static boolean asalMi(int sayi) { //this class for controlling is it prime or not
+        if (sayi < 2) return false; 
+        for (int j = 2; j < sayi; j++) { 
+            if (sayi % j == 0) {
+                return false;
+            }
+        }
+        return true; 
+    }
+}
